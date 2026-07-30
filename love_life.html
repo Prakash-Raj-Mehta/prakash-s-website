@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love life</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        body{
+            background-color: #ffffff;
+            height: 100vh;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            font-family: Arial,sans-serif;
+        }
+        .video-box{
+            
+            
+
+        box-shadow:
+        0px 20px 45px rgba(0,0,0,.8),
+        0px 0px 25px rgba(255,255,255,.08);
+            
+        }
+
+        video{
+
+            width:auto;
+            height:300px;
+
+            border-radius:12px;
+
+            display:block;
+        }
+        
+        .acont{
+            text-align: center;
+            align-items: center;
+            /* margin-top: 200px; */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            margin-top: 20px;
+        }
+        a{
+            text-align: center;
+            align-items: center;
+            color: green;
+            height: 20px;
+            width: auto;
+            border: dotted 1px red;
+            border-radius: 8px;
+            padding: 3px 9px 3px 9px;
+            display: flex;
+            flex-wrap: wrap; 
+            text-align: center;
+            justify-content: center;
+            text-decoration: wavy;
+            background-color: ghostwhite;
+            font-size: 13px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        a:hover{
+            font-size: 14px;
+            background-color: rgb(252, 249, 188);
+            color: rgb(40, 1, 1);
+            text-decoration: dotted;
+            text-transform: capitalize;
+            font-weight: 200px;
+            font-family: serif;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="video-box">
+        <video id="myVideo" controls autoplay loop>
+            <source src="images/vedio1.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="acont">
+    <a href="index.html">Want to return to the homepage? Click here. 👆</a>
+    </div>
+    <script>
+        const video = document.getElementById("myVideo");
+
+        // Full volume
+        video.volume = 1.0;
+
+        // Browser allow kare to autoplay
+        video.play().catch((err) => {
+            console.log("Autoplay blocked:", err);
+        });
+
+    </script>
+</body>
+</html>
