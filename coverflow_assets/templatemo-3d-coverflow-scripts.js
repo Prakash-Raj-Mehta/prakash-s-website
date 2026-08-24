@@ -44,8 +44,8 @@ https://templatemo.com/tm-595-3d-coverflow
         // Image data with titles and descriptions
         const imageData = [
             {
-                title: "1 pic",
-                description: "1 one seentence detail about pic"
+                title: "ODITORIUME PIC",
+                description: "DOCUMENT VERIFICATION TIME"
             },
             {
                 title: "2 pic",
